@@ -1,17 +1,17 @@
 [English](./README.md) | 简体中文
 
-# postcss-unit-transform
+# postcss-unit-transforms
 
-[![Build Status](https://travis-ci.org/yingye/postcss-unit-transform.svg?branch=master)](https://travis-ci.org/yingye/postcss-unit-transform)
-[![npm version](https://badge.fury.io/js/postcss-unit-transform.svg)](https://badge.fury.io/js/postcss-unit-transform)
-[![change-log](https://img.shields.io/badge/changelog-md-blue.svg)](https://github.com/yingye/postcss-unit-transform/blob/master/CHANGELOG.md)
+[![Build Status](https://travis-ci.org/yingye/postcss-unit-transforms.svg?branch=master)](https://travis-ci.org/yingye/postcss-unit-transforms)
+[![npm version](https://badge.fury.io/js/postcss-unit-transforms.svg)](https://badge.fury.io/js/postcss-unit-transforms)
+[![change-log](https://img.shields.io/badge/changelog-md-blue.svg)](https://github.com/yingye/postcss-unit-transforms/blob/master/CHANGELOG.md)
 
 将 px 单位转换为 rpx 单位，或者其他单位的 [PostCSS](https://github.com/ai/postcss)插件。
 
 ## Install
 
 ```
-$ npm install postcss-unit-transform --save-dev
+$ npm install postcss-unit-transforms --save-dev
 ```
 
 ## Usage

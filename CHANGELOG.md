@@ -1,6 +1,6 @@
 # Change Log
 
-Change log for postcss-unit-transform. [Details at Github](https://github.com/yingye/postcss-unit-transform)
+Change log for postcss-unit-transforms. [Details at Github](https://github.com/yingye/postcss-unit-transforms)
 
 ## [0.2.0] - 2018-09-11
 

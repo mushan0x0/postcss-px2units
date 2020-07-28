@@ -1,7 +1,7 @@
 var postcss = require('postcss');
 var assign = require('object-assign');
 
-module.exports = postcss.plugin('postcss-unit-transform', function (opts) {
+module.exports = postcss.plugin('postcss-unit-transforms', function (opts) {
   opts = opts || {};
   opts = assign({
     divisor: 1,

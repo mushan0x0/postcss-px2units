@@ -1,6 +1,6 @@
 {
   "name": "postcss-unit-transforms",
-  "version": "0.0.0-alpha.1",
+  "version": "0.0.0-alpha.2",
   "description": "postcss plugin",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yingye/postcss-unit-transform.git"
+    "url": "git+https://github.com/yingye/postcss-unit-transforms.git"
   },
   "keywords": [
     "postcss",
@@ -19,9 +19,9 @@
   "author": "yingye",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yingye/postcss-unit-transform/issues"
+    "url": "https://github.com/yingye/postcss-unit-transforms/issues"
   },
-  "homepage": "https://github.com/yingye/postcss-unit-transform#readme",
+  "homepage": "https://github.com/yingye/postcss-unit-transforms#readme",
   "dependencies": {
     "object-assign": "^4.1.1",
     "postcss": "^6.0.19"
