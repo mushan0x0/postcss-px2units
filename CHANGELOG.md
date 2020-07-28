@@ -1,6 +1,6 @@
 # Change Log
 
-Change log for postcss-px2units. [Details at Github](https://github.com/yingye/postcss-px2units)
+Change log for postcss-unit-transform. [Details at Github](https://github.com/yingye/postcss-unit-transform)
 
 ## [0.2.0] - 2018-09-11
 

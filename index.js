@@ -1,7 +1,7 @@
 var postcss = require('postcss');
 var assign = require('object-assign');
 
-module.exports = postcss.plugin('postcss-px2units', function (opts) {
+module.exports = postcss.plugin('postcss-unit-transform', function (opts) {
   opts = opts || {};
   opts = assign({
     divisor: 1,
@@ -11,12 +11,13 @@ module.exports = postcss.plugin('postcss-px2units', function (opts) {
     comment: 'no'
   }, opts);
 
-  function repalcePx(str) {
+  function repalcePx(str, fileName) {
     if (!str) {
       return '';
     }
     return str.replace(/\b(\d+(\.\d+)?)px\b/ig, function (match, x) {
-      var size = x * opts.multiple / opts.divisor;
+      const multiple = opts.multiple instanceof Function ? opts.multiple(fileName) : opts.multiple;
+      var size = x * multiple / opts.divisor;
       return size % 1 === 0 ? size + opts.targetUnits : size.toFixed(opts.decimalPlaces) + opts.targetUnits;
     });
   }
@@ -26,7 +27,7 @@ module.exports = postcss.plugin('postcss-px2units', function (opts) {
       if (decl && decl.next() && decl.next().type === 'comment' && decl.next().text === opts.comment) {
         decl.next().remove();
       } else {
-        decl.value = repalcePx(decl.value);
+        decl.value = repalcePx(decl.value, decl.source.input.file);
       }
     });
   };

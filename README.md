@@ -1,17 +1,17 @@
 English | [简体中文](./README_CN.md)
 
-# postcss-px2units
+# postcss-unit-transform
 
-[![Build Status](https://travis-ci.org/yingye/postcss-px2units.svg?branch=master)](https://travis-ci.org/yingye/postcss-px2units)
-[![npm version](https://badge.fury.io/js/postcss-px2units.svg)](https://badge.fury.io/js/postcss-px2units)
-[![change-log](https://img.shields.io/badge/changelog-md-blue.svg)](https://github.com/yingye/postcss-px2units/blob/master/CHANGELOG.md)
+[![Build Status](https://travis-ci.org/yingye/postcss-unit-transform.svg?branch=master)](https://travis-ci.org/yingye/postcss-unit-transform)
+[![npm version](https://badge.fury.io/js/postcss-unit-transform.svg)](https://badge.fury.io/js/postcss-unit-transform)
+[![change-log](https://img.shields.io/badge/changelog-md-blue.svg)](https://github.com/yingye/postcss-unit-transform/blob/master/CHANGELOG.md)
 
 A plugin for [PostCSS](https://github.com/ai/postcss) that generates rpx units from pixel units, it also can generate units which you want.
 
 ## Install
 
 ```
-$ npm install postcss-px2units --save-dev
+$ npm install postcss-unit-transform --save-dev
 ```
 
 ## Usage
@@ -77,7 +77,7 @@ Default:
 Detail:
 
 - divisor(Number): divisor, replace pixel value with pixel / divisor.
-- multiple(Number): multiple, replace pixel value with pixel * multiple.
+- multiple(Number | (fileName) => Number): multiple, replace pixel value with pixel * multiple.
 - decimalPlaces(Number): the number of decimal places. For example, the css code is `width: 100px`, we will get the vaule is `Number(100 / divisor * multiple).toFixed(decimalPlaces)`.
 - comment(String): default value is 'no'. For example, if you set it 'not replace', the css code `width: 100px; /* not replace */` will be translated to `width: 100px;`
 - targetUnits(String): The units will replace pixel units, you can set it 'rem'.

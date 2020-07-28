@@ -16,7 +16,7 @@ function test (input, output, opts, done) {
     })
 }
 
-describe('postcss-px2units', () => {
+describe('postcss-unit-transform', () => {
   it('replace pixel values', (done) => {
     test(`.title {
       font-size: 24px;
