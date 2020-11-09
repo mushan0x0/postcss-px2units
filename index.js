@@ -17,7 +17,7 @@ module.exports = postcss.plugin('postcss-unit-transforms', function (opts) {
     }
     return str.replace(/\b(\d+(\.\d+)?)px\b/ig, function (match, x) {
       const multiple = opts.multiple instanceof Function ? opts.multiple(fileName) : opts.multiple;
-      var size = x * multiple / opts.divisor;
+      var size = +x === 1 ? 1 : x * multiple / opts.divisor;
       return size % 1 === 0 ? size + opts.targetUnits : size.toFixed(opts.decimalPlaces) + opts.targetUnits;
     });
   }
